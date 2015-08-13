@@ -10,6 +10,8 @@
     <modules>
         <module>SurefireJunit</module>
         <module>SurefireTestng</module>
+        <module>FailsafeJunit</module>
+        <module>FailsafeTestng</module>
     </modules>
     <packaging>pom</packaging>
 

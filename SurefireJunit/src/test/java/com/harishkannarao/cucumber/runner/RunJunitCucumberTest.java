@@ -1,7 +1,8 @@
 package com.harishkannarao.cucumber.runner;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import cucumber.api.junit.Cucumber;
+import org.junit.runner.RunWith;
 
 @CucumberOptions(
         strict = true,
@@ -14,5 +15,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
         // Top package in src/test/java
         glue = "com.harishkannarao.cucumber"
 )
-public class RunCucumberTest extends AbstractTestNGCucumberTests{
+@RunWith(Cucumber.class)
+public class RunJunitCucumberTest {
 }
